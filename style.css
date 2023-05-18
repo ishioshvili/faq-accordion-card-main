@@ -1,0 +1,196 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* mobile version */
+
+body {
+    background: linear-gradient(180deg, #B068E9 0%, #6463E7 100%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Kumbh Sans';
+}
+.mainFaq {
+    background-color: white;
+    width: 327px;
+    height: 535px;
+    box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
+    border-radius: 23px;
+}
+
+.mainDiv {
+    display: flex;
+    justify-content: center;
+}
+
+.mobileImg {
+    position: absolute;
+    margin-top: -110px;
+}
+
+.mobileImgWoman {
+    width: 236.85px;
+    display: block;
+}
+
+.mobileImgPattern {
+    width: 240px;
+    margin-top: -75px;
+}
+
+h1 {
+    margin-top: 132px;
+    margin-left: 130px;
+    margin-bottom: 40px;
+    color: #1E1F36;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.faq {
+    color: #4B4C5F;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16.12px;
+    display: inline;
+}
+
+.answer {
+    color: #787887;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 13px;
+    display: none;
+}
+
+.questions {
+    margin-left: 25px;
+    margin-right: 24px;
+    padding-bottom: 48px;
+}
+
+.iconArrow {
+    transition: 0.7s;
+}
+
+.hoverQuestion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 19px;
+}
+
+.rect {
+    margin-top: 18px;
+}
+
+
+@media screen and (min-width: 1100px) {
+    .mainFaq {
+        width: 920px;
+        height: 509px;
+    }
+
+    h1 {
+        margin-top: 65px;
+        margin-left: 475px;
+        margin-bottom: 45px;
+    }
+    
+    .faq {
+        color: #4B4C5F;
+        font-size: 14px;
+        line-height: 17.36px;
+        cursor: pointer;
+    }
+
+    .faq:hover {
+        color:#F47B56;;
+    }
+
+    .iconArrow {
+        cursor: pointer;
+    }
+    
+    .questions {
+        margin-left: 475px;
+        margin-right: 95px;
+        padding-bottom: 83px;
+    }
+    
+    .hoverQuestion {
+        margin-top: 18px;
+    }
+    
+    .rect {
+        width: 350px;
+    }
+
+    .mainDiv {
+        flex-direction: column;
+    }
+    
+    .mobileImg {
+        margin-left: -90px;
+        margin-top: 40px;
+    }
+    
+    .mobileImgWoman {
+        width: 472px;
+    }
+    
+    .mobileImgPattern {
+        width: 475px;
+        margin-top: -150px;
+    }
+
+}
